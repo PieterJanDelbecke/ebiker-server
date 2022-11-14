@@ -5,6 +5,7 @@ const port = 3000;
 
 const loginRoutes = require("./routes/login");
 
+app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(loginRoutes);
