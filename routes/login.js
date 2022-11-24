@@ -3,18 +3,23 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/signin", (req, res) => {
-	console.log("LOGIN GET");
-	res.send("GET LOGGINS");
+	console.log("SIGN IN GET");
+	res.send("GET SIGN IN");
 });
 
 router.post("/signin", (req, res) => {
 	console.log(req.body);
-	res.send("LOGIN POST");
+	res.send("SIGN IN POST");
+});
+
+router.get("/signup", (req, res) => {
+	console.log("SIGN UP GET");
+	res.send("GET SIGN UP");
 });
 
 router.post("/signup", (req, res) => {
 	console.log(req.body);
-	res.send("SIGNUP POST");
+	res.send("SIGN UP POST");
 });
 
 module.exports = router;
